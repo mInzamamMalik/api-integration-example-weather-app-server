@@ -18,7 +18,7 @@ function App() {
         e.preventDefault();
 
         console.log("I am click handler")
-        axios.get(`${baseUrl}/weather/${cityName}`)
+        axios.get(`${baseUrl}/weather`)
             .then(response => {
                 console.log("response: ", response.data);
 
